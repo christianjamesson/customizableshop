@@ -1,1 +1,2 @@
-# customizableshop
+# Customizable Discord Shop
+

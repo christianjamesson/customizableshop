@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Shop Name</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Price: $10</p>
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" value="1" min="1" max="1">
+                    <button onclick="addToCart('Product 1', 10, document.getElementById('quantity1').value)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>Price: $20</p>
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" id="quantity2" value="1" min="1" max="1">
+                    <button onclick="addToCart('Product 2', 20, document.getElementById('quantity2').value)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>Price: $30</p>
+                    <label for="quantity3">Quantity:</label>
+                    <input type="number" id="quantity3" value="1" min="1" max="1">
+                    <button onclick="addToCart('Product 3', 30, document.getElementById('quantity3').value)">Add to Cart</button>
+                </div>
+            </div>
+            <h2>Cart</h2>
+            <div id="cart"></div>
+            <div class="customer-info">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <label for="note">Note:</label>
+                <textarea id="note"></textarea>
+                <button onclick="placeOrder()">Place Order</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 christianjamesson. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
